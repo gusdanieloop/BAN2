@@ -1,16 +1,14 @@
-var express             = require("express"),
-    app                 = express(),
-    bodyParser          = require('body-parser');
+const express    = require("express");
+const app        = express();
+//const bodyParser = require('body-parser');
 
-//requiring routes
-var indexRoutes         = require("./routes/index");
+const routes     = require("./config/routes");
 
-app.use(bodyParser.urlencoded({extended: true}));
-app.set("view engine", "ejs");
+//app.use(bodyParser.urlencoded({extended: true}));
+//app.set("view engine", "ejs");
 
-app.use("/", indexRoutes);
-
+app.use(routes);
 
 app.listen(3000, ()=>{
-    console.log("ir para localhost:3000");
+    console.log("locahost:3000");
 });
