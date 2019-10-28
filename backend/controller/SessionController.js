@@ -2,12 +2,13 @@ const User = require('../model/User')
 
 module.exports = {
     async showUsers(req, res){
-        User.getUsers((err,usuarios) => {
+        console.log(req.query)
+        User.getUsers((err,users) => {
             if(err)
                 console.log(err)
-            console.log(usuarios)
-            res.json(usuarios)
+            res.json(users)
         })
+
 
     }
 }

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import api from '../../services/api'
+import Button from 'react-bootstrap/Button'
 
 //import './style.css'
-export default function Dashboard(){
+export default function MostraUsuarios(){
     const [usuarios, setUsuario] = useState([])
 
     useEffect(() =>{
@@ -20,6 +21,7 @@ export default function Dashboard(){
             <ul>
                 {usuarios.map(usuario => (
                     <li>
+                    <Button>oi</Button>
                         <p>{usuario.codp}</p>
                         <p>{usuario.nome}</p>
                         <p>{usuario.cpf}</p>
