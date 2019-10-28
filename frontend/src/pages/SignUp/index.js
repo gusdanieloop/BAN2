@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import api from '../../services/api'
-import { Link, withRouter } from "react-router-dom";
 import { Button, Form, Col, Row } from 'react-bootstrap'
 
 //import './style.css'

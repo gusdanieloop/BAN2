@@ -51,6 +51,8 @@ router.post('/deleteTipo', TipoController.deleteTipo);
 
 //rotas user
 router.get('/users', UsuariosController.showUsers);
+router.post('/autentication', UsuariosController.autentication);
+
 router.get('/userById', UsuariosController.showUserById);
 router.post('/createUser', UsuariosController.createUser);
 router.post('/updateUser', UsuariosController.updateUser);
